@@ -1,0 +1,9 @@
+List<int> removingduplicates(List<int> numbers){
+  return numbers.toSet().toList();
+}
+void main(){
+  List<int> nums =[1,2,2,3,4,4,5];
+  List<int> uniquenums = removingduplicates(nums);
+  print("original list : $nums");
+  print("after removing duplicates : $uniquenums");
+}
