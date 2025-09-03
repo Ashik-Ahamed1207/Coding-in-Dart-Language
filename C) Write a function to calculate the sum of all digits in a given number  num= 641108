@@ -1,0 +1,16 @@
+int sumofdigits(int num){
+  int sum=0;
+  while(num>0){
+    int digit=num%10;
+    sum+=digit;
+    num~/=10;
+  }
+  return sum;
+}
+void main(){
+  int num=641108;
+  int result=sumofdigits(num);
+  
+  print("number :$num");
+  print("sum of digits:$result");
+}
